@@ -8,14 +8,14 @@
  */
 int main(void)
 {
-	char i;
-	char comma = ',';
-	char space = ' ';
+	int i;
+	int comma = ',';
+	int space = ' ';
 
 	for (i = '0'; i <= '9'; i++)
 	{
 		putchar(i);
-		
+
 		if (i < '9')
 		{
 			putchar(comma);
