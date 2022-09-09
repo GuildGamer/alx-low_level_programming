@@ -1,9 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ *main - negative, positive or zero
+ *Description: Using the main function
+ *This program prints to stderr
+ *Return: 0
+ */
 int main(void)
 {
 	int n;
