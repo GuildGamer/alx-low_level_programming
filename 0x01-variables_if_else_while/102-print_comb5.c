@@ -1,51 +1,34 @@
 #include <stdio.h>
 
 /**
- *main - prints alphabet
- *Description: Using the main function
- *This program prints to stderr
- *Return: 0
+ * main - prints all possible combinations of two two-digit numbers
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
-	int comma = ',';
-	int space = ' ';
+	int i, j;
 
-	for (i = '0'; i <= '9'; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j = '0'; j <= '9'; j++)
+		for (j = 0; j < 100; j++)
 		{
-			for (k = '0'; k <= '9'; k++)
+			if (i < j)
 			{
-				for (l = '0'; l <= '9'; l++)
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
 				{
-					if (((i + j) <  (k + l)))
-					{
-					putchar(i);
-					putchar(j);
-
-					putchar(space);
-
-					putchar(k);
-					putchar(l);
-
-					if ((i < '9' || j < '8') || (k < '9' || l < '9'))
-					{
-						putchar(comma);
-						putchar(space);
-					}
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
+
 		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
 
