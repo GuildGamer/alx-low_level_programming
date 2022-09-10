@@ -23,7 +23,7 @@ int main(void)
 			{
 				for (l = '0'; l <= '9'; l++)
 				{
-					if ((i + j) < (k + l))
+					if ((i  < k) || (j < l))
 					{
 					putchar(i);
 					putchar(j);
@@ -33,7 +33,7 @@ int main(void)
 					putchar(k);
 					putchar(l);
 
-					if ((i < '9' || j < '8') && (k < '9' || l < '9'))
+					if ((i < '9' || j < '8') || (k < '9' || l < '9'))
 					{
 						putchar(comma);
 						putchar(space);
