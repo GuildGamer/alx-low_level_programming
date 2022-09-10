@@ -14,10 +14,9 @@ int main(void)
 	int space = ' ';
 
 	for (i = '0'; i <= '8'; i++)
-	{	
+	{
 		for (j = '1'; j <= '9'; j++)
 		{
-
 			if (i < j)
 			{
 				putchar(i);
@@ -28,7 +27,7 @@ int main(void)
 					putchar(comma);
 					putchar(space);
 				}
-			}	
+			}
 		}
 	}
 
@@ -36,3 +35,4 @@ int main(void)
 
 	return (0);
 }
+
