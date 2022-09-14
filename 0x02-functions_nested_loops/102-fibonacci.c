@@ -12,7 +12,7 @@ int main(void)
 	int i = 1;
 	int j = 2;
 	int seq = 0;
-	int count = 1;
+	int count = 2;
 
 	printf("%d, ", 1);
 	printf("%d, ", 2);
