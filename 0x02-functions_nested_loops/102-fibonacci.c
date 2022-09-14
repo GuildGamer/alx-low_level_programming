@@ -11,7 +11,7 @@ int main(void)
 {
 	int i = 1;
 	int j = 2;
-	long long int seq = 0;
+	unsigned long long int seq = 0;
 	int count = 2;
 
 	printf("%d, ", 1);
