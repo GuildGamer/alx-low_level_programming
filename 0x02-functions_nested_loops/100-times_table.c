@@ -24,13 +24,13 @@ void print_space(int n)
 	}
 	if (count == 3)
 	{
-		printf(", ");
+		printf(" ");
 	} else if (count == 2)
 	{
-		printf(",  ");
+		printf("  ");
 	} else if (count == 1)
 	{
-		printf(",   ");
+		printf("   ");
 	}
 }
 
@@ -46,7 +46,13 @@ if (n > 0 && n <= 15)
 
 		while (j <= n)
 		{
-			printf("%d", i * j);
+			if (j < n)
+			{
+				printf("%d,", i * j);
+			} else
+			{
+				printf("%d", i * j);
+			}
 			if (j < n)
 			{
 				print_space(i * j);
