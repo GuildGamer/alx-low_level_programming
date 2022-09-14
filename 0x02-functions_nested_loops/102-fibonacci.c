@@ -14,8 +14,8 @@ int main(void)
 	unsigned long int seq = 0;
 	int count = 2;
 
-	printf("%li, ", 1);
-	printf("%li, ", 2);
+	printf("%d, ", 1);
+	printf("%d, ", 2);
 	while (count < 50)
 	{
 		seq = i + j;
