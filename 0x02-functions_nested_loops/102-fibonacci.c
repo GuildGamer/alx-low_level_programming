@@ -9,13 +9,13 @@
 
 int main(void)
 {
-	int i = 1;
-	int j = 2;
+	unsigned long int i = 1;
+	unsigned long int j = 2;
 	unsigned long int seq = 0;
 	int count = 2;
 
-	printf("%d, ", 1);
-	printf("%d, ", 2);
+	printf("%li, ", 1);
+	printf("%li, ", 2);
 	while (count < 50)
 	{
 		seq = i + j;
