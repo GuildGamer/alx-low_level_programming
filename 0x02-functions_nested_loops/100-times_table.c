@@ -45,7 +45,7 @@ if (n > 0 && n <= 15)
 		int j = 0;
 
 		while (j <= n)
-		{	
+		{
 			if (j > 0)
 			{
 				print_space(i * j);
@@ -63,7 +63,7 @@ if (n > 0 && n <= 15)
 		i++;
 	}
 }
-if( n== 0)
+if (n == 0)
 {
 	printf("%d", 0);
 	printf("\n");
