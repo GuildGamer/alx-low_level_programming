@@ -2,19 +2,19 @@
 #include <stdio.h>
 
 /**
- * print_space - Prints all natural numbers from input to 98,
+ * main - Prints all natural numbers from input to 98,
  * in order separated by a comma followed by a space.
- * @n: The number to begin counting at.
+ * Return: 0
  */
 
-int main()
-{   
-    for(int i = 0; i < 1024; i++)
-    {
-        if (i % 3 == 0 || i % 5 == 0)
-        {
-            printf("%d\n", i);
-        }
-    }
-    return 0;
+int main(void)
+{
+	for (int i = 0; i < 1024; i++)
+	{
+		if (i % 3 == 0 || i % 5 == 0)
+		{
+			printf("%d\n", i);
+		}
+	}
+	return (0);
 }
