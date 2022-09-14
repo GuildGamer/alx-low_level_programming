@@ -46,7 +46,7 @@ if (n > 0 && n <= 15)
 
 		while (j <= n)
 		{	
-			if (j > 0 || j < n)
+			if (j > 0 && j < n)
 			{
 				print_space(i * j);
 			}
