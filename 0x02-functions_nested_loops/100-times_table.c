@@ -21,7 +21,22 @@ void print_times_table(int n)
 				printf("%d", i * j);
 				if (j < n)
 				{
-					printf(",  ");
+					int count = 0;
+					int k = i * j;
+
+					while(k != 0)  
+					{  
+						k=k/10;  
+						count++;  
+					}	
+
+					if(count == 3){
+						printf(", ");
+					}else if(count == 2){
+						printf(",  ");
+					}else if(count == 1){
+						printf(",   ");
+					}
 				}
 				j++;
 			}
