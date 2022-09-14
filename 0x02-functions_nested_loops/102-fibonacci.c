@@ -11,7 +11,7 @@ int main(void)
 {
 	int i = 1;
 	int j = 2;
-	unsigned long long int seq = 0;
+	long unsigned int seq = 0;
 	int count = 2;
 
 	printf("%d, ", 1);
@@ -23,10 +23,10 @@ int main(void)
 		j = seq;
 		if (count == 49)
 		{
-			printf("%lli", seq);
+			printf("%li", seq);
 		} else
 		{
-			printf("%lli, ", seq);
+			printf("%li, ", seq);
 		}
 		count++;
 	}
