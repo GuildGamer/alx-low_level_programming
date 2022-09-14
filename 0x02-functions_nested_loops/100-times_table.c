@@ -66,5 +66,6 @@ if (n > 0 && n <= 15)
 if( n== 0)
 {
 	printf("%d", 0);
+	printf("\n");
 }
 }
