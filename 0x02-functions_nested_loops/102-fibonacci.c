@@ -23,10 +23,10 @@ int main(void)
 		j = seq;
 		if (count == 49)
 		{
-			printf("%d", seq);
+			printf("%lu", seq);
 		} else
 		{
-			printf("%d, ", seq);
+			printf("%lu, ", seq);
 		}
 		count++;
 	}
