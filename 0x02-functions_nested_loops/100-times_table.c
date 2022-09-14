@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_times_table - Prints all natural numbers from input to 98,
+ * print_space - Prints all natural numbers from input to 98,
  * in order separated by a comma followed by a space.
  * @n: The number to begin counting at.
  */
@@ -33,6 +33,12 @@ void print_space(int n)
 		printf("   ");
 	}
 }
+
+/**
+ * print_times_table - Prints all natural numbers from input to 98,
+ * in order separated by a comma followed by a space.
+ * @n: The number to begin counting at.
+ */
 
 void print_times_table(int n)
 {
