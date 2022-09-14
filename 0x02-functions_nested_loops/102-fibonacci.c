@@ -21,7 +21,8 @@ int main(void)
 		seq = i + j;
 		i = j;
 		j = seq;
-		if (count == 49){
+		if (count == 49)
+		{
 			printf("%d", seq);
 		} else
 		{
@@ -29,7 +30,6 @@ int main(void)
 		}
 		count++;
 	}
-
 	printf("\n");
 
 	return (0);
