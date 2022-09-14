@@ -12,16 +12,16 @@ void print_times_table(int n)
 	{
 		int i = 0;
 
-		while (i < n)
+		while (i <= n)
 		{
 			int j = 0;
 
-			while (j < n)
+			while (j <= n)
 			{
 				printf("%d ", i * j);
 				j++;
 			}
-			
+
 			printf("\n");
 			i++;
 		}
