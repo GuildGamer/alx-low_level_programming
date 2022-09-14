@@ -19,6 +19,7 @@ void print_times_table(int n)
 			while (j <= n)
 			{
 				printf("%d", i * j);
+
 				if (j < n)
 				{
 					int count = 0;
@@ -28,6 +29,10 @@ void print_times_table(int n)
 					{  
 						k=k/10;  
 						count++;  
+					}
+					
+					if(k == 0){
+						count = 1;
 					}	
 
 					if(count == 3){
