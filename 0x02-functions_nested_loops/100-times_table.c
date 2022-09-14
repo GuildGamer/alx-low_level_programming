@@ -45,17 +45,17 @@ if (n > 0 && n <= 15)
 		int j = 0;
 
 		while (j <= n)
-		{
+		{	
+			if ((i != 0 && j != 0) || j < n)
+			{
+				print_space(i * j);
+			}
 			if (j < n)
 			{
 				printf("%d,", i * j);
 			} else
 			{
 				printf("%d", i * j);
-			}
-			if (j < n)
-			{
-				print_space(i * j);
 			}
 			j++;
 		}
