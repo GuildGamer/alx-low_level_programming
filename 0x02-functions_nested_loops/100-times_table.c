@@ -6,48 +6,55 @@
  * in order separated by a comma followed by a space.
  * @n: The number to begin counting at.
  */
-void print_times_table(int n)
+
+void print_space(int n)
 {
-	if (n > 0 && n <= 15)
+	int count = 0;
+
+	if (n == 0)
 	{
-		int i = 0;
-
-		while (i <= n)
+		count = 1;
+	} else
+	{
+		while (n != 0)
 		{
-			int j = 0;
-
-			while (j <= n)
-			{
-				printf("%d", i * j);
-
-				if (j < n)
-				{
-					int count = 0;
-					int k = i * j;
-
-					while(k != 0)  
-					{  
-						k=k/10;  
-						count++;  
-					}
-					
-					if(k == 0){
-						count = 1;
-					}	
-
-					if(count == 3){
-						printf(", ");
-					}else if(count == 2){
-						printf(",  ");
-					}else if(count == 1){
-						printf(",   ");
-					}
-				}
-				j++;
-			}
-
-			printf("\n");
-			i++;
+			n = n / 10;
+			count++;
 		}
 	}
+	if (count == 3)
+	{
+		printf(", ");
+	} else if (count == 2)
+	{
+		printf(",  ");
+	} else if (count == 1)
+	{
+		printf(",   ");
+	}
+}
+
+void print_times_table(int n)
+{
+if (n > 0 && n <= 15)
+{
+	int i = 0;
+
+	while (i <= n)
+	{
+		int j = 0;
+
+		while (j <= n)
+		{
+			printf("%d", i * j);
+			if (j < n)
+			{
+				print_space(i * j);
+			}
+			j++;
+		}
+		printf("\n");
+		i++;
+	}
+}
 }
